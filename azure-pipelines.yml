@@ -41,9 +41,9 @@ steps:
   inputs:
     SourceFolder: '$(Build.ArtifactStagingDirectory)'
     Contents: |
-      drop/*.txt
-      drop/*.cmd
-      drop/*.xml
+      *.txt
+      *.cmd
+      *.xml
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'

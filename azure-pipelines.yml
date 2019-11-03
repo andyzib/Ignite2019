@@ -51,9 +51,9 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Build.SourcesDirectory)/src/PokerLeagueManager.Utilties/bin/Debug'
+    SourceFolder: '$(Build.SourcesDirectory)/src/PokerLeagueManager.Utilities/bin/Debug'
     Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)/Utilties'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/Utilities'
 - task: DeleteFiles@1
   inputs:
     SourceFolder: '$(Build.ArtifactStagingDirectory)'
